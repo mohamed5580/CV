@@ -602,7 +602,7 @@ p {
 .projects_page .boxs .box .img {
   position: absolute;
   display: block;
-  width: 550px;
+  width: 450px;
   max-width: 100%;
   height: 410px;
   border-radius: 25px;
@@ -629,7 +629,6 @@ p {
 .projects_page .boxs .box-center .cover .links {
   display: inline-block;
   position: relative;
-  right: 250px;
   top: 350px;
   padding: 10px;
   z-index: 50000;
@@ -809,10 +808,10 @@ p {
   .projects_page .tybe1 .boxs .box .img {
     position: absolute;
     display: block;
-    width: auto;
+    width: 320px;
     height: 410px;
     border-radius: 25px;
-    margin-left: 17px;
+    margin-left: auto;
     margin-right: auto;
     left: 0;
     right: 0;
