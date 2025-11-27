@@ -281,6 +281,7 @@ p {
 .Services_page,
 .projects_page {
   margin-top: 5%;
+  width: auto;
 }
 .Setting_page {
   height: 10%;
@@ -308,7 +309,10 @@ p {
   width: 95%;
 }
 .spiin {
-  margin-top: 35px;
+  display: block;
+  margin-right: 100px !important;
+  margin-left: auto !important;
+
 }
 .about span {
   color: var(--main-color);
@@ -454,7 +458,7 @@ p {
 /* start Services_page */
 .Services_page .cards_Services {
   position: relative;
-  width: 800px;
+  width: 85%  ;
   background: fixed;
   border: 1px solid #565656;
   border-radius: 20px;
@@ -485,15 +489,15 @@ p {
 /* end Services_page */
 /* start skils_page */
 .content .skils_page .boxs {
-  display: flexbox;
-  text-align: center !important;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 0.5fr));
+  padding-right: 25px;
   margin-top: 40px;
 }
 .content .skils_page h2 {
   font-size: 48px;
   font-family: "Inter", sans-serif;
   padding-top: 50px;
-  margin-left: 50px;
   color: var(--secondary-color);
 }
 .skils_page h2 span {
@@ -501,20 +505,24 @@ p {
 }
 .content .skils_page .boxs .box {
   display: inline-block;
-  width: 23%;
+  width: 90%;
   font-size: 100px;
   padding: 25px 0 25px 0;
   border: 2px solid var(--section-background);
   border-radius: 85px;
   margin-bottom: 10px;
   transition: 0.3s;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  margin-left: auto;
 }
 .content .skils_page .boxs .box img {
   width: 90px;
 }
 .content .skils_page .boxs .box:hover {
   border: 2px solid var(--main-color);
-  width: 24%;
+  width: 92%;
   transition: 0.4s;
 }
 .content .skils_page .boxs .box:hover h5 {
@@ -528,145 +536,25 @@ p {
 }
 /* end skills */
 
-.content .skils_page .boxs .box:hover {
-  border: 2px solid var(--main-color);
-  width: 24%;
-  transition: 0.4s;
-}
-.content .skils_page .boxs .box:hover h5 {
-  color: var(--main-color);
-}
-
-.content .skils_page .boxs .box h5 {
-  color: var(--secondary-color);
-  font-size: 30px;
-  font-weight: bold;
-}
 /* end main content */
 /* start project */
 
-.projects_page .tybe1{
+/* start project */
+.projects_page .tybe1 {
   display: block;
 }
+
+/* tybe1 uses a simple horizontal flow; tybe2 uses a grid — both share many common
+   element styles so they are consolidated below to avoid repetition. */
 .projects_page .tybe1 .boxs {
-  display: flexbox;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 40px;
   text-align: center !important;
   margin-top: 40px;
-  position: absolute;
-}
-.projects_page .tybe1 h2 {
-  font-size: 48px;
-  font-family: "Inter", sans-serif;
-  padding-top: 50px;
-  margin-left: 10px;
-  color: var(--secondary-color);
+  position: relative;
 }
 
-.projects_page  .tybe1 h2 span {
-  color: var(--main-color);
-}
-.projects_page  .tybe1 .boxs .box {
-  width: 770px;
-  height: 500px;
-  border-radius: 30px;
-  margin-bottom: 10px;
-  transition: 0.3s;
-  overflow: hidden;
-  margin-bottom: 100px;
-}
-.projects_page  .tybe1 .boxs .box .img_background {
-  width: 100%;
-  height: 410px;
-  background: url(image/projects-background.jpg);
-  background-size: cover;
-  border-radius: 25px;
-  z-index: 55;
-}
-.projects_page .tybe1 .boxs .box .img {
-  position: absolute;
-  display: block;
-  width: 550px;
-  height: 410px;
-  border-radius: 25px;
-  margin-left: auto;
-  margin-right: auto;
-  left: 0;
-  right: 0;
-  margin-top: 120px;
-  z-index: 500;
-}
-.projects_page .tybe1 .boxs .box .cover {
-  position: absolute;
-  top: 0;
-  width: 770px;
-  height: 410px;
-  border-radius: 25px;
-  background-color: #1f1f1f78;
-  overflow: hidden;
-}
-.projects_page .tybe1 .boxs .box .cover .links,
-.projects_page .tybe1 .boxs .box-center .cover .links {
-  display: inline-block;
-  position: relative;
-  right: 250px;
-  top: 350px;
-  padding: 10px;
-  z-index: 50000;
-}
-.projects_page .tybe1 .boxs .box .cover .links .link,
-.projects_page .tybe1 .boxs .box-center .cover .links .link {
-  display: inline-block;
-  text-decoration: none;
-  color: var(--secondary-color);
-  font-size: small;
-  padding: 10px;
-  background-color: var(--secondary2-color);
-  border-radius: 50px;
-  transition: 0.5s;
-}
-
-.projects_page .tybe1 .boxs .box .cover .links .link:hover,
-.projects_page .tybe1 .boxs .box-center .cover .links .link:hover {
-  background-color: var(--secondary-color);
-  color: var(--secondary2-color);
-} 
-.projects_page .tybe1 .boxs .box .header-project {
-  margin-top: 10px;
-  color: var(--section-background);
-  padding: 5px;
-  text-align: left;
-}
-.projects_page .tybe1 .boxs .box .header-project .project-link:hover {
-  border-bottom: 1px solid var(--secondary-color);
-}
-.projects_page .tybe1 .boxs .box .header-project .project-link {
-  color: var(--section-background);
-  text-decoration: none;
-}
-.projects_page .tybe1 .boxs .box-center {
-  display: inline-block;
-  position: relative;
-  width: 400px;
-  height: 500px;
-  border-radius: 30px;
-  margin-bottom: 10px;
-  transition: 0.3s;
-  overflow: hidden;
-  margin-bottom: 100px;
-}
-.projects_page .tybe1 .boxs .box-center .cover .img {
-  width: 370px;
-  height: 373px;
-  margin-left: 10px;
-  margin-right: 10px;
-}
-.projects_page .tybe2 h2 {
-  font-size: 48px;
-  font-family: "Inter", sans-serif;
-  padding-top: 50px;
-  margin-left: 10px;
-  color: var(--secondary-color);
-}
 .projects_page .tybe2 .boxs {
   text-align: center !important;
   margin-top: 40px;
@@ -676,19 +564,33 @@ p {
   grid-row-gap: 60px;
   position: relative;
 }
-.projects_page  .tybe2 h2 span {
+
+.projects_page .tybe1 h2,
+.projects_page .tybe2 h2 {
+  font-size: 48px;
+  font-family: "Inter", sans-serif;
+  padding-top: 50px;
+  margin-left: 10px;
+  color: var(--secondary-color);
+}
+.projects_page .tybe1 h2 span,
+.projects_page .tybe2 h2 span {
   color: var(--main-color);
 }
-.projects_page  .tybe2 .boxs .box {
+
+/* shared box/card styles */
+.projects_page .boxs .box,
+.projects_page .boxs .box-center {
   width: 770px;
+  max-width: 100%;
   height: 500px;
   border-radius: 30px;
-  margin-bottom: 10px;
+  margin-bottom: 100px;
   transition: 0.3s;
   overflow: hidden;
-  margin-bottom: 100px;
 }
-.projects_page  .tybe2 .boxs .box .img_background {
+
+.projects_page .boxs .box .img_background {
   width: 100%;
   height: 410px;
   background: url(image/projects-background.jpg);
@@ -696,10 +598,12 @@ p {
   border-radius: 25px;
   z-index: 55;
 }
-.projects_page .tybe2 .boxs .box .img {
+
+.projects_page .boxs .box .img {
   position: absolute;
   display: block;
   width: 550px;
+  max-width: 100%;
   height: 410px;
   border-radius: 25px;
   margin-left: auto;
@@ -709,17 +613,20 @@ p {
   margin-top: 120px;
   z-index: 500;
 }
-.projects_page .tybe2 .boxs .box .cover {
+
+.projects_page .boxs .box .cover {
   position: absolute;
   top: 0;
   width: 770px;
+  max-width: 100%;
   height: 410px;
   border-radius: 25px;
   background-color: #1f1f1f78;
   overflow: hidden;
 }
-.projects_page .tybe2 .boxs .box .cover .links,
-.projects_page .tybe2 .boxs .box-center .cover .links {
+
+.projects_page .boxs .box .cover .links,
+.projects_page .boxs .box-center .cover .links {
   display: inline-block;
   position: relative;
   right: 250px;
@@ -727,8 +634,9 @@ p {
   padding: 10px;
   z-index: 50000;
 }
-.projects_page .tybe2 .boxs .box .cover .links .link,
-.projects_page .tybe2 .boxs .box-center .cover .links .link {
+
+.projects_page .boxs .box .cover .links .link,
+.projects_page .boxs .box-center .cover .links .link {
   display: inline-block;
   text-decoration: none;
   color: var(--secondary-color);
@@ -739,36 +647,37 @@ p {
   transition: 0.5s;
 }
 
-.projects_page .tybe2 .boxs .box .cover .links .link:hover,
-.projects_page .tybe2 .boxs .box-center .cover .links .link:hover {
+.projects_page .boxs .box .cover .links .link:hover,
+.projects_page .boxs .box-center .cover .links .link:hover {
   background-color: var(--secondary-color);
   color: var(--secondary2-color);
-} 
-.projects_page .tybe2 .boxs .box .header-project {
+}
+
+.projects_page .boxs .box .header-project {
   margin-top: 10px;
   color: var(--section-background);
   padding: 5px;
   text-align: left;
 }
-.projects_page .tybe2 .boxs .box .header-project .project-link:hover {
+.projects_page .boxs .box .header-project .project-link:hover {
   border-bottom: 1px solid var(--secondary-color);
 }
-.projects_page .tybe2 .boxs .box .header-project .project-link {
+.projects_page .boxs .box .header-project .project-link {
   color: var(--section-background);
   text-decoration: none;
 }
-.projects_page .tybe2 .boxs .box-center {
+
+.projects_page .boxs .box-center {
   display: inline-block;
   position: relative;
   width: 400px;
   height: 500px;
   border-radius: 30px;
-  margin-bottom: 10px;
   transition: 0.3s;
   overflow: hidden;
-  margin-bottom: 100px;
 }
-.projects_page .tybe2 .boxs .box-center .cover .img {
+
+.projects_page .boxs .box-center .cover .img {
   width: 370px;
   height: 373px;
   margin-left: 10px;
@@ -781,7 +690,6 @@ p {
   }
   .card-head {
     position: relative;
-    width: 99%;
     margin-left: auto;
     margin-right: auto;
     left: 0;
@@ -800,10 +708,16 @@ p {
   }
 
   .say_hi {
-    font-size: 40px;
+    font-size: 30px;
     font-weight: 400;
     line-height: -60px;
   }
+  .spiin {
+  display: block;
+  margin-right: auto !important;
+  margin-left: auto !important;
+
+}
   .spiin .to_project {
     margin-top: 10px;
     margin-left: auto;
@@ -834,7 +748,7 @@ p {
     font-size: 35px;
   }
   .About_page p {
-    width: auto;
+    width: 90%;
   }
   .content .skils_page h2 {
     margin-left: 10px;
@@ -846,12 +760,20 @@ p {
   .skils_page,
   .projects_page {
     margin-top: 10%;
+    
   }
   .Services_page .cards_Services {
-    width: 400px;
+      width: 90%;
+      margin-left: auto;
+      margin-right: auto;
+  }
+   .content .skils_page .boxs {
+    display: grid;
+    grid-template-columns: auto auto;
+    margin-top: 40px;
   }
   .content .skils_page .boxs .box {
-    width: 49%;
+    
     margin-left: auto;
     margin-right: auto;
     justify-content: center;
@@ -862,7 +784,6 @@ p {
   }
   .content .skils_page .boxs .box:hover {
     border: 2px solid var(--main-color);
-    width: 49%;
     transition: 0.4s;
     margin-left: auto;
     margin-right: auto;
