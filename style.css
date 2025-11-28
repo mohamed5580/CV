@@ -51,7 +51,11 @@ p {
   background: fixed;
   z-index: 20;
 }
-
+.show-L{
+  position: absolute;
+  top: 10px;
+  right: 10px;
+}
 .img_heder {
   width: 210px;
   border-radius: 15px;
@@ -206,6 +210,13 @@ p {
   border-radius: 100%;
   font-size: 20px;
   padding: 12px;
+  line-height: 1;
+  background-color: transparent;
+  border: 1px solid transparent;
+  position: absolute;
+  top: 10px;
+  right: 10px;
+
 }
 .nav_btn .main_btn:hover {
   color: var(--main-color);
@@ -217,12 +228,14 @@ p {
 
 .btns {
   box-shadow: 0px 0px 3px rgba(211, 211, 211, 0.933);
-  display: block;
   width: 50px;
   margin-top: 100px;
   border-radius: 40px;
   margin-left: auto;
   font-size: 20px;
+  position: absolute;
+  top: 10px;
+  right: 0px;
 }
 
 .btns .nav-tab {
@@ -454,6 +467,20 @@ p {
   color: var(--main-color);
 }
 /* end Resume_page */
+
+/* state when navbar toggler is clicked: highlight resume items */
+.resume-timeline.nav-open .item {
+  background: rgba(228, 175, 18, 0.04);
+  border-left: 4px solid var(--main-color);
+  padding-left: 18px;
+  transition: background var(--main-duration), border-color var(--main-duration);
+}
+.resume-timeline.nav-open .item .date,
+.resume-timeline.nav-open .item h2,
+.resume-timeline.nav-open .item p {
+  color: var(--main-color);
+}
+
 
 /* start Services_page */
 .Services_page .cards_Services {
