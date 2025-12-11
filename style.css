@@ -598,11 +598,12 @@ p {
   width: 90px;
   margin-left: auto;
   margin-right: auto;
-  margin-bottom: 55px;
+  margin-bottom: 25px;
+  margin-top: 25px;
 
 
 
-  
+
 }
 
 .content .skils_page .boxs .box:hover {
