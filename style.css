@@ -5,6 +5,7 @@
   padding: 0;
   box-sizing: border-box;
 }
+
 :root {
   --main-color: #e4af12;
   --secondary-color: #fff;
@@ -31,6 +32,7 @@ body {
   object-fit: cover;
   z-index: -1;
 }
+
 p {
   margin: 0px;
   padding: 0px;
@@ -51,11 +53,13 @@ p {
   background: fixed;
   z-index: 20;
 }
-.show-L{
+
+.show-L {
   position: absolute;
   top: 10px;
   right: 10px;
 }
+
 .img_heder {
   width: 210px;
   border-radius: 15px;
@@ -66,30 +70,37 @@ p {
   font-size: small;
   font-weight: 50;
 }
+
 .b {
   font-weight: bold;
   font-size: x-large;
   width: 300px;
 }
+
 .card-title {
   padding: 10px;
   font-size: 14px;
 }
+
 .card-text {
   text-align: center;
   font-size: medium;
   margin-top: -5px;
 }
+
 .bs {
   font-size: x-small;
   font-weight: 50;
 }
+
 .iconss {
   margin-top: 15px;
 }
+
 .iconss a {
   color: var(--secondary-color);
 }
+
 .iconss a:hover {
   color: var(--main-color);
 }
@@ -202,6 +213,7 @@ p {
     bottom: 100%;
   }
 }
+
 /* end card */
 /* start button */
 
@@ -218,10 +230,12 @@ p {
   right: 10px;
 
 }
+
 .nav_btn .main_btn:hover {
   color: var(--main-color);
   border-color: var(--main-color);
 }
+
 .nav_btn .main_btn:focus {
   color: var(--main-color);
 }
@@ -249,18 +263,20 @@ p {
 .btns .nav-tab:hover {
   color: var(--main-color);
 }
+
 .btns .nav-tab.active {
   color: var(--main-color);
   width: 50px;
   height: 50px;
   margin-top: 5px;
-  background-color: #1f1f1f;
+  background-color: transparent;
 }
 
 .btns .nav-tab img {
   width: 25px;
   color: var(--section-background);
 }
+
 /* end buttons */
 /* start main content */
 .content {
@@ -279,15 +295,18 @@ p {
   border-radius: 30px;
   align-items: center;
 }
+
 .name_pages .names_page .ml {
   margin-right: 10px;
   font-size: larger;
 }
+
 .name_pages .names_page img {
   width: 20px;
   margin-right: 5px;
   color: var(--section-background);
 }
+
 .About_page,
 .Resume_page,
 .skils_page,
@@ -296,10 +315,12 @@ p {
   margin-top: 5%;
   width: auto;
 }
+
 .Setting_page {
   height: 10%;
   margin-bottom: -10%;
 }
+
 .say_hi {
   font-size: 78px;
   color: var(--secondary-color);
@@ -308,6 +329,7 @@ p {
   letter-spacing: -0.2px;
   font-weight: 300;
 }
+
 .say_hi span {
   color: var(--main-color);
 }
@@ -321,15 +343,18 @@ p {
   margin-top: 50px;
   width: 95%;
 }
+
 .spiin {
   display: block;
   margin-right: 100px !important;
   margin-left: auto !important;
 
 }
+
 .about span {
   color: var(--main-color);
 }
+
 .spiin .arrow {
   display: flex;
   align-items: center;
@@ -340,6 +365,7 @@ p {
   font-size: 30px;
   color: var(--section-background);
 }
+
 .to_project {
   width: 175px;
   height: 175px;
@@ -354,23 +380,29 @@ p {
   animation-iteration-count: infinite;
   animation-timing-function: linear;
 }
+
 @keyframes spiin {
   0% {
     transform: rotate(0deg);
   }
+
   100% {
     transform: rotate(360deg);
   }
 }
+
 .to_project i {
   color: var(--secondary-color);
 }
+
 .to_project .fa-rotate-90 {
   color: var(--secondary-color);
 }
+
 .spiin a {
   width: 5px;
 }
+
 .facts {
   gap: 100px;
   margin-top: 50px;
@@ -401,6 +433,7 @@ p {
   line-height: 24px;
   text-transform: uppercase;
 }
+
 .square {
   height: 130px;
   width: 130px;
@@ -410,13 +443,16 @@ p {
   padding-top: 50px;
   background-color: var(--secondary-color);
 }
+
 .btn-top {
   display: none;
 }
+
 .navbar {
   display: flex;
   background: none;
 }
+
 .navbar-light .navbar-brand {
   color: var(--secondary-color);
 }
@@ -459,13 +495,16 @@ p {
   display: block;
   transition: 0.3s;
 }
+
 .Resume_page .item:hover .date {
   color: var(--main-color);
 }
+
 .Resume_page .item:hover ::before {
   background: var(--main-color);
   color: var(--main-color);
 }
+
 /* end Resume_page */
 
 /* state when navbar toggler is clicked: highlight resume items */
@@ -475,6 +514,7 @@ p {
   padding-left: 18px;
   transition: background var(--main-duration), border-color var(--main-duration);
 }
+
 .resume-timeline.nav-open .item .date,
 .resume-timeline.nav-open .item h2,
 .resume-timeline.nav-open .item p {
@@ -485,7 +525,7 @@ p {
 /* start Services_page */
 .Services_page .cards_Services {
   position: relative;
-  width: 85%  ;
+  width: 85%;
   background: fixed;
   border: 1px solid #565656;
   border-radius: 20px;
@@ -494,12 +534,14 @@ p {
   margin-bottom: 10px;
   z-index: 20;
 }
+
 .Services_page .cards_Services h2 {
   font-size: 24px;
   font-weight: 300;
   margin-bottom: 8px;
   color: #fff;
 }
+
 .Services_page .cards_Services .i {
   position: absolute;
   font-size: 30px;
@@ -507,12 +549,15 @@ p {
   right: 50px;
   top: 45px;
 }
+
 .Services_page .cards_Services:hover {
   border-color: var(--main-color);
 }
+
 .Services_page .cards_Services:hover .i {
   color: var(--main-color);
 }
+
 /* end Services_page */
 /* start skils_page */
 .content .skils_page .boxs {
@@ -521,15 +566,18 @@ p {
   padding-right: 25px;
   margin-top: 40px;
 }
+
 .content .skils_page h2 {
   font-size: 48px;
   font-family: "Inter", sans-serif;
   padding-top: 50px;
   color: var(--secondary-color);
 }
+
 .skils_page h2 span {
   color: var(--main-color);
 }
+
 .content .skils_page .boxs .box {
   display: inline-block;
   width: 90%;
@@ -544,14 +592,17 @@ p {
   align-items: center;
   margin-left: auto;
 }
+
 .content .skils_page .boxs .box img {
   width: 90px;
 }
+
 .content .skils_page .boxs .box:hover {
   border: 2px solid var(--main-color);
   width: 92%;
   transition: 0.4s;
 }
+
 .content .skils_page .boxs .box:hover h5 {
   color: var(--main-color);
 }
@@ -561,6 +612,7 @@ p {
   font-size: 30px;
   font-weight: bold;
 }
+
 /* end skills */
 
 /* end main content */
@@ -586,7 +638,7 @@ p {
   text-align: center !important;
   margin-top: 40px;
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(450px, 1fr));
+  grid-template-columns: repeat(1, minmax(450px, 1fr));
   grid-column-gap: 40px;
   grid-row-gap: 60px;
   position: relative;
@@ -600,6 +652,7 @@ p {
   margin-left: 10px;
   color: var(--secondary-color);
 }
+
 .projects_page .tybe1 h2 span,
 .projects_page .tybe2 h2 span {
   color: var(--main-color);
@@ -685,9 +738,11 @@ p {
   padding: 5px;
   text-align: left;
 }
+
 .projects_page .boxs .box .header-project .project-link:hover {
   border-bottom: 1px solid var(--secondary-color);
 }
+
 .projects_page .boxs .box .header-project .project-link {
   color: var(--section-background);
   text-decoration: none;
@@ -709,11 +764,13 @@ p {
   margin-left: 10px;
   margin-right: 10px;
 }
+
 /* start for phone */
 @media (max-width: 725px) {
   .body-overlay {
     width: min-content;
   }
+
   .card-head {
     position: relative;
     margin-left: auto;
@@ -722,6 +779,7 @@ p {
     left: 0;
     right: 0;
   }
+
   .card-head .iconss {
     margin-right: 0px;
   }
@@ -730,6 +788,7 @@ p {
     display: block;
     /* margin-right:500px; */
   }
+
   .content {
     margin-left: 10px;
   }
@@ -739,31 +798,37 @@ p {
     font-weight: 400;
     line-height: -60px;
   }
-  .spiin {
-  display: block;
-  margin-right: auto !important;
-  margin-left: auto !important;
 
-}
+  .spiin {
+    display: block;
+    margin-right: auto !important;
+    margin-left: auto !important;
+
+  }
+
   .spiin .to_project {
     margin-top: 10px;
     margin-left: auto;
     margin-right: auto;
     padding: 5px;
   }
+
   .spiin .arrow {
     margin-left: auto;
     margin-right: auto;
   }
+
   .facts {
     display: flex;
     justify-content: center;
     gap: 30px;
   }
+
   .facts .left h1 {
     margin-top: 50px;
     font-size: 48px;
   }
+
   .facts .right h1 {
     margin-top: 50px;
     font-size: 48px;
@@ -774,9 +839,11 @@ p {
   .Services_page .about {
     font-size: 35px;
   }
+
   .About_page p {
     width: 90%;
   }
+
   .content .skils_page h2 {
     margin-left: 10px;
   }
@@ -787,28 +854,36 @@ p {
   .skils_page,
   .projects_page {
     margin-top: 10%;
-    
+
   }
+
   .Services_page .cards_Services {
-      width: 90%;
-      margin-left: auto;
-      margin-right: auto;
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
   }
-   .content .skils_page .boxs {
+
+  .content .skils_page .boxs {
     display: grid;
     grid-template-columns: auto auto;
     margin-top: 40px;
   }
+
   .content .skils_page .boxs .box {
-    
     margin-left: auto;
     margin-right: auto;
     justify-content: center;
     align-items: center;
   }
+
   .content .skils_page .boxs .box img {
-    width: 120px;
+    width: 75px;
   }
+
+  .content .skils_page .boxs .box h5 {
+    font: 21px sans-serif;
+  }
+
   .content .skils_page .boxs .box:hover {
     border: 2px solid var(--main-color);
     transition: 0.4s;
@@ -817,14 +892,17 @@ p {
     justify-content: center;
     align-items: center;
   }
+
   .content .skils_page .boxs .box:hover h5 {
     color: var(--main-color);
   }
+
   .projects_page .tybe1 .boxs .box {
     width: 395px;
     left: 0;
     right: 0;
   }
+
   .projects_page .tybe1 .boxs .box .img_background {
     width: 100%;
     height: 410px;
@@ -832,6 +910,7 @@ p {
     background-size: cover;
     z-index: 55;
   }
+
   .projects_page .tybe1 .boxs .box .img {
     position: absolute;
     display: block;
@@ -845,15 +924,17 @@ p {
     margin-top: 50px;
     z-index: 500;
   }
+
   .projects_page .tybe1 .boxs .box .cover .links {
     padding: 0;
   }
+
   .projects_page .tybe1 .boxs .box .header-project {
     display: block;
     text-align: left;
     border-bottom: 1px solid var(--secondary-color);
   }
-  
+
 
 
   .projects_page .tybe2 .boxs .box {
@@ -861,6 +942,7 @@ p {
     left: 0;
     right: 0;
   }
+
   .projects_page .tybe2 .boxs .box .img_background {
     width: 100%;
     height: 410px;
@@ -868,6 +950,7 @@ p {
     background-size: cover;
     z-index: 55;
   }
+
   .projects_page .tybe2 .boxs .box .img {
     position: absolute;
     display: block;
@@ -881,9 +964,11 @@ p {
     margin-top: 50px;
     z-index: 500;
   }
+
   .projects_page .tybe2 .boxs .box .cover .links {
     padding: 0;
   }
+
   .projects_page .tybe2 .boxs .box .header-project {
     display: block;
     text-align: left;
