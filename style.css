@@ -581,6 +581,7 @@ p {
 .content .skils_page .boxs .box {
   display: inline-block;
   width: 90%;
+  height: 250px;
   font-size: 100px;
   padding: 25px 0 25px 0;
   border: 2px solid var(--section-background);
@@ -595,6 +596,9 @@ p {
 
 .content .skils_page .boxs .box img {
   width: 90px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 55px;
 }
 
 .content .skils_page .boxs .box:hover {
@@ -877,11 +881,11 @@ p {
   }
 
   .content .skils_page .boxs .box img {
-    width: 75px;
+    width: 100px;
   }
 
   .content .skils_page .boxs .box h5 {
-    font: 21px sans-serif;
+    font: 25px sans-serif;
   }
 
   .content .skils_page .boxs .box:hover {
