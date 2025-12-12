@@ -289,7 +289,7 @@
         <div class="boxs">
           <div class="box" data-aos="fade-up">
             <img class="click" src="image/left-click.png" alt="">
-            <a href="" class="project-link">
+            <a href="#normalModal" class="project-link" onclick="window.dialog.showModal();">
               <img src="image/ACC.png" alt="" class="img_background">
               <div class="cover">
                 <img class="img" src="image/ERP.jpg" alt="">
@@ -300,13 +300,54 @@
                 </div>
               </div>
               <h1 class="header-project">
-                <a href="" class="project-link">POS System</a>
+                <a class="project-link">POS System</a>
               </h1>
             </a>
+
+            <dialog id="dialog">
+              <h2 class="header-project text-center">POS System</h2>
+              <div class="overflow-scroll">
+                <img class="img1" src="image/ACC.png" alt="">
+                <img class="img1" src="image/acc1.png" alt="">
+                <img class="img1" src="image/acc2.png" alt="">
+              </div>
+              <button onclick="window.dialog.close();" aria-label="close" class="x">❌</button>
+            </dialog>
           </div>
+
         </div>
       </div>
 
+      <div id="normalModal" class="modal fade">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+              <h4 class="modal-title">Modal title</h4>
+            </div>
+            <div class="modal-body">
+              <iframe frameborder="0" scrolling="no" width="700" height="700"
+                src="http://google.about.com/b/2013/04/01/google-nose.htm">
+              </iframe>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+              <button type="button" class="btn btn-primary">Save changes</button>
+            </div>
+          </div><!-- /.modal-content -->
+        </div><!-- /.modal-dialog -->
+      </div><!-- /.modal -->
+
+      <!-- <div class="popup" id="myPopup" aria-hidden="true" onClick="if(event.target == this){closePopup('#myPopup');}">
+        <div class="wrapper" aria-labelledby="popupTitle" aria-describedby="popupText" aria-modal="true">
+          <h2 id="popupTitle">This is my Popup</h2>
+          <p id="popupText">Lorem ipsum dolor sit amet consectetur, adipiscing elit lacinia mus, sapien nibh imperdiet
+            tempus. Vitae massa semper mi sagittis a cum cursus fusce per, gravida tellus metus purus litora nam
+            ultricies donec, nibh dis ligula ad facilisi penatibus condimentum aenean.</p>
+         <button >Close</button> 
+      <label id="closePopup" onClick="closePopup('#myPopup');" aria-label="Close popup" for="closePopup">&times;</label>
+    </div>
+  </div> -->
       <div class="tybe1">
         <h2>My <span>Web Projects</span>
         </h2>
