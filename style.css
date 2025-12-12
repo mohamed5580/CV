@@ -711,7 +711,7 @@ p {
   display: block;
   width: 100px;
   height: 100px;
-  right: -10px;
+  right: -15px;
   bottom: 50px;
   z-index: 2500;
 }
@@ -726,7 +726,7 @@ p {
   }
 
   50% {
-    transform: rotate(30deg);
+    transform: rotate(-30deg);
   }
 
   100% {
