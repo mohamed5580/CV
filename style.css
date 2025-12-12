@@ -985,6 +985,7 @@ p {
     width: 85%;
     left: 0;
     right: 0;
+    max-width: 425px;
 
   }
 
