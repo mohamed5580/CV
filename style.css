@@ -1038,7 +1038,9 @@ dialog .overflow-scroll .img1 {
   .content .skils_page .boxs .box img {
     width: 100px;
   }
-
+  .desktop-app-img {
+    width: 100px;
+  }
   .content .skils_page .boxs .box h5 {
     font: 25px sans-serif;
   }
