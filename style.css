@@ -992,7 +992,10 @@ dialog .overflow-scroll .img1 {
     margin-top: 50px;
     font-size: 48px;
   }
-
+  .about{
+    font-size: 25px;
+    line-height: 40px;
+  }
   .About_page .about,
   .Resume_page .about,
   .Services_page .about {
